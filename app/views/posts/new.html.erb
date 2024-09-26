@@ -1,0 +1,17 @@
+<h1> Create a New Post </h1>
+
+<%= form_with model: @post do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Create Post" %>
+  </div>
+<% end %>
